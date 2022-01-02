@@ -12,7 +12,7 @@ public class Config {
 
     // Bot Defaults
     public static String botName = "Hatsune Radio";
-    public static String botVer = "1.0_02";
+    public static String botVer = "1.0_03";
 
     public static String defaultPresence = botName + " " + botVer;
 }

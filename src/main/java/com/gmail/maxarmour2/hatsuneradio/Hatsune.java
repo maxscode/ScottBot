@@ -20,7 +20,7 @@ import java.util.Scanner;
 public class Hatsune {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(Hatsune.class);
-    private static JDA jda;
+    public static JDA jda;
 
     public Hatsune() throws LoginException, SQLException, InterruptedException {
         jda = JDABuilder

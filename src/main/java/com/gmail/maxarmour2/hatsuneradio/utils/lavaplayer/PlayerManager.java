@@ -72,7 +72,7 @@ public class PlayerManager {
                     }
                     EmbedBuilder playlistLoaded = new EmbedBuilder()
                             .setTitle(defaultTitle)
-                            .setDescription("Adding to queue: `" + tracks.size() + "` tracks from playlist `" + playlist.getName());
+                            .setDescription("Adding to queue: `" + tracks.size() + "` tracks from playlist `" + playlist.getName() +"`");
 
                     channel.sendMessageEmbeds(playlistLoaded.build()).queue();
                     return;
@@ -92,12 +92,12 @@ public class PlayerManager {
 
             @Override
             public void noMatches() {
-
+            //
             }
 
             @Override
             public void loadFailed(FriendlyException exception) {
-
+            //
             }
         });
     }

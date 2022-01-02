@@ -14,6 +14,7 @@ public class TrackScheduler extends AudioEventAdapter {
     public final BlockingQueue<AudioTrack> queue;
     public boolean repeatEnabled = false;
 
+
     public TrackScheduler(AudioPlayer player) {
         this.player = player;
         this.queue = new LinkedBlockingQueue<>();

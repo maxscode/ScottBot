@@ -5,7 +5,7 @@ plugins {
 }
 
 mainClassName = 'com.gmail.maxarmour2.hatsuneradio.Hatsune'
-version '1.0_01'
+version '1.0_03'
 sourceCompatibility = JavaVersion.VERSION_17
 
 repositories {
