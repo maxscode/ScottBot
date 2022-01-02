@@ -1,7 +1,13 @@
-# Project exclude paths
-/.gradle/
+# IntelliJ IDEA specific paths
 /.idea/
+/build/
+/out/
+
+# Gradle specific paths
 /gradle/
-.env
 gradlew
 gradlew.bat
+/.gradle/
+
+# Project specific paths
+.env
