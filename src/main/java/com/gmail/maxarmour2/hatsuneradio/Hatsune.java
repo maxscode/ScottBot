@@ -24,7 +24,7 @@ public class Hatsune {
 
     public Hatsune() throws LoginException, SQLException, InterruptedException {
         jda = JDABuilder
-                .create(Config.get("TOKEN"),
+                .create(Config.get("DEV_TOKEN"),
                         GatewayIntent.GUILD_MEMBERS, GatewayIntent.GUILD_MESSAGES, GatewayIntent.GUILD_VOICE_STATES)
                 .setChunkingFilter(ChunkingFilter.ALL)
                 .disableCache(CacheFlag.ACTIVITY, CacheFlag.CLIENT_STATUS, CacheFlag.EMOTE, CacheFlag.ONLINE_STATUS)
@@ -32,7 +32,7 @@ public class Hatsune {
                 .build()
                 .awaitReady();
 
-        jda.getPresence().setPresence(OnlineStatus.ONLINE, Activity.playing("HatsuneRadio v1.0_01"));
+        jda.getPresence().setPresence(OnlineStatus.ONLINE, Activity.playing(Config.defaultPresence));
 
         SQLiteDataSource.getConnection();
     }

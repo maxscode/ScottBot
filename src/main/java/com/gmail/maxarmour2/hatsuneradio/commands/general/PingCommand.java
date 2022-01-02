@@ -1,4 +1,4 @@
-package com.gmail.maxarmour2.hatsuneradio.commands;
+package com.gmail.maxarmour2.hatsuneradio.commands.general;
 
 import com.gmail.maxarmour2.hatsuneradio.utils.cmd.CommandContext;
 import com.gmail.maxarmour2.hatsuneradio.utils.cmd.Command;

@@ -11,3 +11,4 @@ gradlew.bat
 
 # Project specific paths
 .env
+database.db

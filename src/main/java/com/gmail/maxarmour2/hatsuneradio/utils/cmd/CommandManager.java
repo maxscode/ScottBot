@@ -1,6 +1,7 @@
 package com.gmail.maxarmour2.hatsuneradio.utils.cmd;
 
-import com.gmail.maxarmour2.hatsuneradio.commands.*;
+import com.gmail.maxarmour2.hatsuneradio.commands.general.HelpCommand;
+import com.gmail.maxarmour2.hatsuneradio.commands.general.PingCommand;
 import com.gmail.maxarmour2.hatsuneradio.commands.management.*;
 import com.gmail.maxarmour2.hatsuneradio.commands.music.*;
 import net.dv8tion.jda.api.events.message.guild.GuildMessageReceivedEvent;
@@ -28,6 +29,7 @@ public class CommandManager {
         addCommand(new SkipCommand());
         addCommand(new NowPlayingCommand());
         addCommand(new RepeatCommand());
+        addCommand(new DisconnectCommand());
 
         // Management Commands
         addCommand(new SetCustomPrefixCommand());
