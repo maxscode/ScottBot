@@ -4,8 +4,8 @@ plugins {
     id 'com.github.johnrengelman.shadow' version '6.0.0'
 }
 
-mainClassName = 'com.gmail.maxarmour2.hatsuneradio.Hatsune'
-version '1.0_03'
+mainClassName = 'com.gmail.maxarmour2.scottbot.scott'
+version '1.1_01'
 sourceCompatibility = JavaVersion.VERSION_17
 
 repositories {
